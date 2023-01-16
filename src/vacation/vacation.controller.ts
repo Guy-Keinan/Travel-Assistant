@@ -14,7 +14,7 @@ export class VacationController {
 
     @Get(':userId')
     async getVacationByUserId(@Param() params): Promise<Vacation[]> {
-        return await this.vacationService.getVacationByUser(params.userId);
+        return await this.vacationService.getVacationByUserId(params.userId);
     }
 
     @Post()
