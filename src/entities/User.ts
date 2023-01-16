@@ -14,7 +14,4 @@ export class User {
 
   @Column()
   createdAt: Date;
-
-  @OneToMany(() => Vacation, vacation => vacation.user)
-  vacations: Vacation[]
 }

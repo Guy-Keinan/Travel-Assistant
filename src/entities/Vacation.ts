@@ -15,6 +15,6 @@ export class Vacation {
     @Column()
     budget: number;
 
-    @ManyToOne(() => User, user => user.vacations)
-    user: User
+    @Column()
+    userId: number;
 }
